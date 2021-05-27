@@ -11,7 +11,7 @@
 - initial files
 #### Second iteration  
 - potential testing methods
-```
+```python
 import pytest
 import unittest
 
@@ -85,3 +85,14 @@ class Calc_Test(unittest.TestCase):  # helps us test
     def test_percentage(self):
         self.assertEqual(self.calc_test.percentage(10, 50), 20)  # (10 / 50) * 100 = 20%
 ```
+## Notes
+- at least two .py files, test.py and functional.py
+  - test.py is for the test functions
+  - functional.py is for the actual code
+- test functions must start with 'test'
+- assertEqual is a function from pytest(like .upper())
+- must set the object to the class from the functional.py file
+- the values in the test functions are (parameter1, parameter2, answer)
+  - example: (10, 50), 60) = 10 + 50 = 60
+  - can include hidden parameters
+    - example for percentage: (10, 50), 20) = (10 / 50) * 100 = 20
