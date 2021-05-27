@@ -12,7 +12,7 @@ class Calc_Test(unittest.TestCase):  # helps us test
         self.assertEqual(self.calc_test.inches(10), 25.4)  # 10 * 2.54 = 25.4
 
     def test_modular(self):
-        self.assertEqual(self.calc_test.modular(4, 2), 0)  # 4 % 2 = 0 | no remainder
+        self.assertEqual(self.calc_test.modular(4, 2), True)  # 4 % 2 = 0 | no remainder
 
     def test_triangle(self):
         self.assertEqual(self.calc_test.triangle(10, 10), 50)  # (height * base) / 2 = 50
